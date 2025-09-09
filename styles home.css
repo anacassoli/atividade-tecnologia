@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap');
 
 /* Reset básico */
 * {
@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-.title{
+.title {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: normal;
@@ -18,12 +18,14 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
-  /*cor da escrita*/color: #ffffff;
+  /*cor da escrita*/
+  color: #ffffff;
   line-height: 1.6;
 }
 
-/*borda do título*/header {
-  background-color:  #405499;
+/*borda do título*/
+header {
+  background-color: #405499;
   color: white;
   padding: 2rem;
   text-align: center;
@@ -38,7 +40,8 @@ body {
   margin: auto;
 }
 
-/*cor dos cards*/ .card {
+/*cor dos cards*/
+.card {
   background-color: #405499;
   border-radius: 8px;
   padding: 1.5rem;
@@ -46,20 +49,21 @@ body {
   transition: transform 0.2s;
 }
 
-/*titulo card*/.card h2 {
+/*titulo card*/
+.card h2 {
   margin-bottom: 0.5rem;
   color: #a4a8e5;
 }
 
 /*titulo card menor*/
 .minus_title_card {
- font-size: 15px;
+  font-size: 16px;
 
 }
 
 
 .card a:hover {
-  color:rgb(255, 237, 215);
+  color: rgb(255, 237, 215);
 }
 
 * {
@@ -73,9 +77,11 @@ body {
 }
 
 .info {
-color:#a4a8e5;
+  color: #4a5097;
 
 }
+
+
 footer {
   background-color: #405499;
   color: #f1f1f1;
@@ -132,13 +138,29 @@ footer {
     justify-content: space-between;
     width: 100%;
   }
+  
 
   .footer-info,
   .footer-social {
     width: 45%;
   }
 }
-html, body {
+
+a:visited {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(202, 223, 253);
+  background-color: transparent;
+  text-decoration: underline;
+}
+  
+
+
+html,
+body {
   height: 100%;
 }
 
