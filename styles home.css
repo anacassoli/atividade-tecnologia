@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap');
 
+
+:root{
+  --cor-texto: #ffffff;
+  --cor-fundo: #ffffff;
+}
+
 /* Reset básico */
 * {
   margin: 0;
@@ -17,8 +23,8 @@
 /*cor da escrita*/
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #ffffff;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
   line-height: 1.6;
 }
 
@@ -88,7 +94,8 @@ footer {
 
 .footer-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  /* flex-direction: column; */
   gap: 30px;
   max-width: 1200px;
   margin: auto;
