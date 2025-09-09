@@ -1,34 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilo do corpo da página */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  body {
+  font-family: 'Poppins', 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 100vh;
   display: flex;
 }
 
+}
+
+/* lados (esquerdo e direito) */
 .container {
   display: flex;
   width: 100%;
 }
 
-/* Lado esquerdo com imagem tecnológica */
+/* Lado esquerdo com imagem */
 .left-panel {
   flex: 1;
-  background: url('adicionar logo do grupo') no-repeat center center;
+  background: url('../Cabeçalho.png') no-repeat center center;
   background-size: cover;
 }
 
-/* Lado direito com formulário (fundo)*/
+
 .right-panel {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, #1D3577, #405499, #6272BB);
+  background: linear-gradient(#305879, #305879,#305879);
   padding: 100px;
 }
 
@@ -51,14 +58,14 @@ body {
   color: #1c1b1b;
   font-size: 14px;
 }
-
+/* Estilo geral dos titulos */
 label {
   display: block;
   margin-top: 15px;
   font-weight: 500;
   color: #1b262c;
 }
-
+/* Estilo para inputs, selects e áreas de texto */
 input, select, textarea {
   width: 100%;
   padding: 10px 12px;
@@ -86,6 +93,7 @@ fieldset label {
   font-weight: normal;
 }
 
+/* Área de texto (caixa de comentários/descrição) */
 textarea {
   resize: vertical;
   height: 30px;
@@ -97,6 +105,7 @@ textarea {
   font-size: 14px;
 }
 
+/* Botão de envio */
 button {
   margin-top: 30px;
   width: 100%;
