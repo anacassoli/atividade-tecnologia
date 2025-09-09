@@ -1,2 +1,1 @@
-# atividade-em-equipe
-tecnologia
+
