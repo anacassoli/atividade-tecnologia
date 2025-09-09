@@ -172,3 +172,72 @@ body {
 .content-wrapper {
   flex: 1;
 }
+
+
+/* Para celulares (até 600px) */
+@media (max-width: 600px) {
+  header {
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-info,
+  .footer-social {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    font-size: 0.8em;
+  }
+}
+
+
+/* Para tablets (601px até 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  header {
+    padding: 2rem 1rem;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-info,
+  .footer-social {
+    width: 48%;
+  }
+}
+
+/* Para telas grandes (acima de 1200px) */
+@media (min-width: 1200px) {
+  .card-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
