@@ -122,3 +122,63 @@ button {
 button:hover {
   background-color: #7aa3bd;
 }
+
+/* Layout para dispositivos móveis (até 768px) */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    height: 200px;
+    background-position: center;
+  }
+
+  .right-panel {
+    padding: 40px 20px;
+  }
+
+  .form-cadastro {
+    padding: 20px;
+    max-width: 100%;
+  }
+}
+
+/* Layout para tablets (entre 769px e 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    height: 300px;
+    background-position: center;
+  }
+
+  .right-panel {
+    padding: 60px 40px;
+  }
+
+  .form-cadastro {
+    max-width: 90%;
+  }
+}
+
+/* Layout para desktops grandes (acima de 1440px) */
+@media (min-width: 1440px) {
+  .right-panel {
+    padding: 120px;
+  }
+
+  .form-cadastro {
+    max-width: 600px;
+  }
+}
+button:hover {
+  background-color: #7aa3bd;
+}
+
